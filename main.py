@@ -28,22 +28,22 @@ while True: # 'forever loop' initialization
     print("Another tool included in the MEDICAL DEJARGONIZER is a condition tool. If you have been diagnosed with a specific condition, the MEDICAL DEJARGONIZER will look for information on the condition and spit it back at you.")
 
     MDMod.line_space(2)
+    
+    print("PROGRAMMER AND OWNER: PlusHistoriae [Discord: PlusHistoriae#3739].")
+    print("MANAGER AND TESTER: QuixotismFix.")
+    print("PROPOSAL CREATORS: oliver twist AND FatGoose.")
 
+    MDMod.line_space(2)
+    
     print("IMPORTANT: ")
     print("We would reccomend reading the TOS.")
   
   elif user_input == "/commands": # adding /commands funtion
     print("'/about': describes the functionality.")
     print("'/commands': lists commands and their format.")
-    print("'/credits': lists contributors to the project.")
     print("'/describe [condition]': gives a description of your medical [condition].")
     print("'/tos': explains the terms of service for this program.")
     print("'/translate [diagnosis]': dejargonizes your medical [diagnosis].")
-  
-  elif user_input == "/credits":
-    print("PROGRAMMER AND OWNER: PlusHistoriae [Discord: PlusHistoriae#3739].")
-    print("MANAGER AND TESTER: QuixotismFix.")
-    print("PROPOSAL CREATORS: oliver twist AND FatGoose.")
   
   elif "/describe" in user_input:
     if user_input.count(" ") == 1:
