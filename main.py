@@ -3,9 +3,13 @@ import MDMod
 
 # interface descriptor
 print("MEDICAL DEJARGONIZER: Interface")
-print("Run '/commands' to view all commands. By using this program, you agree to our terms of service (viewable with '/tos.')")
+print("     Run '/commands' to view all commands.")
 
-MDMod.line_space(2)
+MDMod.line_space(1)
+
+print("By running either '/translate' or '/describe,' you agree to our terms of service (viewable with '/tos.') Please email plushistoriae@gmail.com if there are innacuracies in the output of the program.")
+
+MDMod.line_space(5)
 
 while True: # 'forever loop' initialization
   user_input = input() # gains user input
@@ -55,6 +59,14 @@ while True: # 'forever loop' initialization
   elif user_input == "/easteregg":
     print("hey. you've found the easter egg command. goodjbo mie firend")
 
+  elif user_input == "/tos":
+    print("By running either '/describe' or '/translate,' you agree to the following conditions:")
+    MDMod.line_space(1)
+    print("DISCLAIMER: this program is not entirely accurate. It is accurate a large percentage of the time, but not at all completely accurate.")
+    MDMod.line_space(1)
+    print("Because of that, the creators of this program, PlusHistoriae, QuixotismFix, oliver twist, and FatGoose are not liable for any damages caused by using the program or any assuming any incorrect output of this program to be the truth.")
+    MDMod.line_space(1)
+  
   elif "/translate" in user_input:
     if user_input.count(" ") == 1:
       diagnosis = user_input.split(" ")[1]
