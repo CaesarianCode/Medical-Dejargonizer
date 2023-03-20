@@ -20,7 +20,7 @@ while True: # 'forever loop' initialization
     print("ABOUT THE PROGRAM:")
     print("The MEDICAL DEJARGONIZER is a program to help patients understand a diagnosis or a condition.")
     MDMod.line_space(1)
-    print("Originally, the MEDICAL DEJARGONIZER was part of a school project to create a project to help patients (specifically children from ages 5-15) communicate with doctors. While most used pre-existing tools, our group (see credits) decided to create a tool from scratch. This project flourished mainly outside of school, where PlusHistoriae worked to create as high-quality of a project as possible.")
+    print("Originally, the MEDICAL DEJARGONIZER was part of a school project to create a project to help patients (specifically children from ages 5-15) communicate with doctors. While most groups in this project used pre-existing tools, our group (see credits) decided to create a tool from scratch. This project flourished mainly outside of school, where PlusHistoriae worked to create as high-quality of a project as possible.")
     MDMod.line_space(1)
     print("Work on this project mainly occured from March 16-19, 2023.")
     
@@ -43,7 +43,7 @@ while True: # 'forever loop' initialization
     print("We would reccomend reading the TOS.")
   
   elif user_input == "/commands": # adding /commands funtion
-    print("'/about': describes the functionality.")
+    print("'/about': a semi-detailed documentation of the project.")
     print("'/commands': lists commands and their format.")
     print("'/describe [condition]': gives a description of your medical [condition].")
     print("'/tos': explains the terms of service for this program.")
@@ -60,11 +60,10 @@ while True: # 'forever loop' initialization
     print("hey. you've found the easter egg command. goodjbo mie firend")
 
   elif user_input == "/tos":
-    print("By running either '/describe' or '/translate,' you agree to the following conditions:")
     MDMod.line_space(1)
-    print("DISCLAIMER: this program is not entirely accurate. It is accurate a large percentage of the time, but not at all completely accurate.")
+    print("This program is not entirely accurate. It is accurate a large percentage of the time, but not at all completely accurate.")
     MDMod.line_space(1)
-    print("Because of that, the creators of this program, PlusHistoriae, QuixotismFix, oliver twist, and FatGoose are not liable for any damages caused by using the program or any assuming any incorrect output of this program to be the truth.")
+    print("Thus, the creators of this program, PlusHistoriae, QuixotismFix, oliver twist, and FatGoose are not liable for any damages caused by using the program or any assuming any incorrect output of this program to be the truth.")
     MDMod.line_space(1)
   
   elif "/translate" in user_input:
@@ -74,4 +73,4 @@ while True: # 'forever loop' initialization
     else:
       print("ERROR: the format of '/translate' is '/translate [diagnosis],' and the input taken does not include the [diagnosis] section. See '/commands' to see a list of commands and their format.")
 
-  MDMod.line_space(2) # spaces after command output
+  MDMod.line_space(3) # spaces after command output
